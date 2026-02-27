@@ -1,0 +1,33 @@
+* { /* seletor (global nesse caso), menos especifico = menor prioridade */
+    box-sizing: border-box;
+}
+
+/* Pesquisar hierarquia na documentação */
+
+body { /* seletor (body nesse caso), mais especifico = maior prioridade */
+    margin: 0;
+    color: aliceblue;
+    background-color: #121212;
+    font-family: system-ui, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* id ('#') > class ('.') */
+
+.container {
+    width: 900px;
+    margin: 0 auto; /* cima baixo , esquerda direita */
+    padding: 10px;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(139, 0, 0, 0.35); /* vermelho, verde, azul, transparência */
+    border-radius: 12px; /* arredondar a bordinha */
+    padding: 14px;
+    margin-bottom: 12px ;
+}
+
+.family-img {
+    border: 3px solid rgba(101, 67, 33, 1.0);
+}
