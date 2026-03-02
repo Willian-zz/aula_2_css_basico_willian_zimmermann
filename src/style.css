@@ -1,0 +1,124 @@
+* { /* seletor (global nesse caso), menos especifico = menor prioridade */
+    box-sizing: border-box;
+}
+
+/* Pesquisar hierarquia na documentação */
+
+body { /* seletor (body nesse caso), mais especifico = maior prioridade */
+    margin: 0;
+    color: aliceblue;
+    background-color: #121212;
+    font-family: system-ui, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* id ('#') > class ('.') */
+
+.container {
+    width: 900px;
+    margin: 0 auto; /* cima baixo , esquerda direita */
+    padding: 10px;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(139, 0, 0, 0.35); /* vermelho, verde, azul, transparência */
+    border-radius: 12px; /* arredondar a bordinha */
+    padding: 14px;
+    margin-bottom: 12px ;
+}
+
+h1, h2 {
+    color: rgb(139, 0, 0);
+    margin: 0 0 8px;
+}
+
+.subtitulo {
+    margin: 0;
+    color: #d1d5db;
+}
+
+p {
+    color: #d1d5db; /* amarelo batman (255, 251, 0) */
+}
+
+#apresentacao {
+    border-left: 8px solid rgb(139, 0, 0);
+}
+
+#apresentacao h6 {
+    color: rgba(210, 0, 0, 0.35);
+}
+
+#menu {
+    border: 1px solid rgba(255, 221, 0, 0.35);
+}
+
+.nav {  /* classe nav != de tag nav */
+    list-style: none; /* tirar estilo da lista */
+    margin: 0;  
+    padding: 0;
+    display: flex; /* estilo de formatação da tela */
+    gap: 10px;
+    flex-wrap: nowrap; /* passa os elementos para a fora da tela */
+    justify-content: center;
+}
+
+.nav-link {
+    display: inline-block; /* deixa um elemento ao lado do outro, mas com formatação block (ver disposição no w3schools*/
+    text-decoration: none;
+    color: #000000;
+    background: #f3b225; /* dourado do cinto */
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.3s ease;
+    width: 280px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background: rgb(255, 221, 0);
+    transition: 0.3s ease;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    gap: 30px; /* espaçamento de elementos */
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.bat-img {
+    width: 220px;
+    height: 120px;
+    border: 2px solid rgba(139, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+footer p {
+    color: rgb(255, 221, 0);
+    margin: 6px 0 0;
+}
+
+.link {
+    color: rgb(255, 251, 0);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.family-img {
+    border: 3px solid rgba(101, 67, 33, 1.0);
+    margin: 0 auto;
+    width: 140px;
+    height: 200px;
+}
+
+.family-img img {
+    width: 100%;
+    height: 100%;
+}
